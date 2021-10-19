@@ -14,12 +14,12 @@ const questions = () => {
     {
       type: "input",
       name: "description",
-      message: "Description of project:",
+      message: "Please write a short description of your project:",
     },
     {
       type: "input",
       name: "installinstructions",
-      message: "Installation instructions:",
+      message: "What command should be run to install dependencies?",
     },
     {
       type: "input",
@@ -34,7 +34,7 @@ const questions = () => {
     {
       type: "input",
       name: "testinstructions",
-      message: "Test Instructions:",
+      message: "What command should be run to run tests:",
     },
     {
       type: "list",
@@ -62,6 +62,9 @@ const questions = () => {
 (() => {
   questions()
     .then((answers) => fs.writeFileSync("README.md", generateMarkdown(answers)))
-    .then(() => console.log("Successfully created a README.md file"))
+    .then(() => console.log("Generating README file..."))
     .catch((err) => console.error(err));
 })();
+
+// Function call to initialize app
+// init();
