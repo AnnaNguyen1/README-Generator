@@ -1,38 +1,31 @@
-# tes
-  
-  
-  
-  ## Table Of Contents
-  - [Description](#description)
-  - [Installation Instructions](#installation-instructions)
-  - [Usage Information](#usage-information)
-  - [Contribution Guidelines](#contribution-guidelines)
-  - [Test Instructions](#test-instructions)
-  
-  - [Questions](#questions)
+# README Generator
 
-  ## Description
-  tes
+## Table of Contents
 
-  ## Installation Instructions
-  To install necessary dependencies, run the following command: 
-  ```bash
-  tes
-  ```
+- [Description](#description)
+- [Installation](#installation)
+- [Usage Information](#usage-information)
+- [Questions](#questions)
 
-  ## Usage Information
-  tet
+## Description
 
-  ## Contribution Guidelines
-  tes
+This generator allows users to create a README file by answering prompts given in the terminal. Once all prompts are answered, users can copy the README file generated and add it to their project.
 
-  ## Test Instructions
-  To run tests, run the following command: 
-  ```bash
-  tes
-  ```
+## Installation
 
-  
+To install necessary dependencies, run the following command(s):
 
-  ## Questions 
-  If you have any questions about the repo, please open an issue or contact me directly at tes. You can find more of my work <a href="https://github.com/tes" target="_blank">here</a>.
+```bash
+npm i inquirer
+```
+
+## Usage Information
+
+Run Node index.js in the terminal to run the prompts. After all questions are answered a README.md file will be generated.
+
+Below is a gif that will show you how it works.
+![README Generator walkthrough](./images/readme.gif)
+
+## Questions
+
+If you have any questions about the repo, please open an issue or contact me directly at n.annabich@gmail.com. You can find more of my work <a href="https://github.com/AnnaNguyen1" target="_blank">here</a>.

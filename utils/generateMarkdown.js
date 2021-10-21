@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge;
   switch (license) {
@@ -26,8 +24,6 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "None") {
     return "";
@@ -36,8 +32,6 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "None") {
     return "";
@@ -46,17 +40,7 @@ function renderLicenseSection(license) {
     This project is licensed under the ${license} license.`;
   }
 }
-// Can it be written in an arrow fn?
-// renderLicenseSection = (license) => {
-//   if (license === "None") {
-//     return "";
-//   } else {
-//     return `## License
-//     This project is licensed under the ${license} license.`;
-//   }
-// }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   
@@ -75,7 +59,7 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Installation Instructions
-  To install necessary dependencies, run the following command: 
+  To install necessary dependencies, run the following command(s): 
   \u0060\u0060\u0060bash
   ${data.installinstructions}
   \u0060\u0060\u0060
@@ -87,7 +71,7 @@ function generateMarkdown(data) {
   ${data.contriguidelines}
 
   ## Test Instructions
-  To run tests, run the following command: 
+  To run tests, run the following command(s): 
   \u0060\u0060\u0060bash
   ${data.testinstructions}
   \u0060\u0060\u0060

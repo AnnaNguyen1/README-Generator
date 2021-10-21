@@ -55,16 +55,10 @@ const questions = () => {
   ]);
 };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
+// Initiating function and using writeFileSync method to use promise
 (() => {
   questions()
     .then((answers) => fs.writeFileSync("README.md", generateMarkdown(answers)))
     .then(() => console.log("Generating README file..."))
     .catch((err) => console.error(err));
 })();
-
-// Function call to initialize app
-// init();
